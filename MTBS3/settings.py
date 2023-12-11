@@ -25,7 +25,7 @@ SECRET_KEY = '@h)sb#++it86(tq4jtt)k=0l^p%94#dp$sd3(mx)&w8&(^70gl'
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = True
 
-ALLOWED_HOSTS = []
+ALLOWED_HOSTS = ['x22193090-env.eba-9humu3mm.us-east-1.elasticbeanstalk.com']
 
 
 # Application definition
@@ -129,16 +129,6 @@ MEDIA_URL = '/media/'
 
 
 CRISPY_TEMPLATE_PACK = 'bootstrap4'
-
-LOGIN_REDIRECT_URL = 'theater-home'
-LOGIN_URL = 'login'
-
-EMAIL_BACKEND = 'django.core.mail.backends.smtp.EmailBackend'
-EMAIL_HOST = 'smtp.gmail.com'
-EMAIL_PORT = 587
-EMAIL_USE_TLS = True
-EMAIL_HOST_USER = 'shakib96zaman@gmail.com'
-EMAIL_HOST_PASSWORD = 'ituezsucabauzrvn'
 
 
 
