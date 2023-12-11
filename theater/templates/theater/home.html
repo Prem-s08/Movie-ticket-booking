@@ -1,0 +1,29 @@
+{% extends "theater/base.html" %}
+{% load static %}
+{% block content %}
+    <a href="{% url 'theater-home' %}"><h3>Movie Ticket Booking</h3></a>
+        {% if user.is_authenticated %}
+            <form action="nowshowing">
+                <p>Pick up a Multiplex :
+                    <select>
+                      <option value="OdeonCinemas (The Point)">OdeonCinemas (The Point)</option>
+                      <option value="Cineworld Cinema">Cineworld Cinema</option>
+                      <option value="Stella Cinema">Stella Cinema</option>
+                      <option value="Light House Cinema">Light House Cinema</option>
+                    </select></p>
+                <button class="btn btn-outline-info" type="submit">select</button>
+            </form>
+        {% else%}
+            <form action="login">
+                <p>Pick up a Multiplex :
+                    <select>
+                      <option value="OdeonCinemas (The Point)">OdeonCinemas (The Point)</option>
+                      <option value="Cineworld">Cineworld Cinema</option>
+                      <option value="Stella Cinema">Stella Cinema</option>
+                      <option value="Light House Cinema">Light House Cinema</option>
+                    </select></p>
+                <button class="btn btn-outline-info" type="submit">Select</button>
+            </form>
+        {% endif %}
+                   
+{% endblock content %}

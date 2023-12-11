@@ -1,0 +1,26 @@
+{% extends "theater/base.html" %}
+{% load static %}
+{% block content %}
+<h2>Spider-Man: Across the Spider-Verse</h2>
+
+<div class="imagecontainer">   
+    <div class="polaroid">
+      <img src="{% static 'Spider Man.jpg' %}" alt="5 Terre" style="width:100%">
+    </div>
+    <div class="container">
+        <p>In an attempt to curb the Spot, a scientist, from harnessing the power of the multiverse, Miles Morales joins forces with Gwen Stacy.
+            Release date: June 2, 2023 (USA)
+            Directors: Joaquim Dos Santos, Justin K. Thompson, Kemp Powers
+            Sequel: Spider-Man: Beyond the Spider-Verse
+            Box office: 690.5 million USD
+            Distributed by: Sony Pictures Entertainment Motion Picture Group, Sony Pictures Releasing</p>
+            <img src="{% static 'IMDB.jpeg' %}" style="width:50px"> <strong> 8.7/10
+    </div>
+</div>
+<div class="imagecontainer">
+    <iframe width="950" height="380"
+src="https://www.youtube.com/embed/shW9i6k8cB0?autoplay=1&mute=1">
+</iframe>
+</div>
+           
+{% endblock content %}

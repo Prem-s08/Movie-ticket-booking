@@ -1,0 +1,27 @@
+{% extends "theater/base.html" %}
+{% load static %}
+{% block content %}
+<h2>Trolls Band Together</h2>
+
+<div class="imagecontainer">   
+    <div class="polaroid">
+      <img src="{% static 'Trolls.jpg' %}" alt="5 Terre" style="width:100%">
+    </div>
+    <div class="container">
+        <p>Google users
+            Poppy discovers that Branch and his four brothers were once part of her favorite boy band. When one of his siblings, Floyd, gets kidnapped by a pair of nefarious villains, Branch and Poppy embark on a harrowing and emotional journey to reunite the other brothers and rescue Floyd from a fate even worse than pop culture obscurity.
+            Release date: October 20, 2023 (Ireland)
+            Director: Walt Dohrn
+            Distributed by: Universal Pictures
+            Based on: Good Luck Trolls; by Thomas Dam
+            Box office: $173.8 million </p>
+            <img src="{% static 'IMDB.jpeg' %}" style="width:50px"> <strong> 6.0/10
+    </div>
+</div>
+<div class="imagecontainer">
+    <iframe width="950" height="380"
+src="https://www.youtube.com/embed/DqjwGCUTLZ4?autoplay=1&mute=1">
+</iframe>
+</div>
+           
+{% endblock content %}

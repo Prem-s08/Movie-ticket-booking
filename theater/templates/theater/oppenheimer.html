@@ -1,0 +1,29 @@
+
+{% extends "theater/base.html" %}
+{% load static %}
+{% block content %}
+<h2>Oppenheimer</h2>
+
+<div class="imagecontainer">   
+    <div class="polaroid">
+      <img src="{% static 'oppenheimer.jpg' %}" alt="5 Terre" style="width:100%">
+    </div>
+    <div class="container">
+        <p>Google users
+            During World War II, Lt. Gen. Leslie Groves Jr. appoints physicist J. Robert Oppenheimer to work on the top-secret Manhattan Project. Oppenheimer and a team of scientists spend years developing and designing the atomic bomb. Their work comes to fruition on July 16, 1945, as they witness the world's first nuclear explosion, forever changing the course of history.
+            Release date: July 21, 2023 (Ireland)
+            Director: Christopher Nolan
+            Awards: Bandung Film Festival for Imported Film, MORE
+            Nominations: Bandung Film Festival for Imported Film
+            Budget: 100 million USD
+            Casting director: John Papsidera</p>
+            <img src="{% static 'IMDB.jpeg' %}" style="width:50px"> <strong> 8.4/10
+    </div>
+</div>
+<div class="imagecontainer">
+    <iframe width="950" height="380"
+src="https://www.youtube.com/embed/uYPbbksJxIg?autoplay=1&mute=1">
+</iframe>
+</div>
+           
+{% endblock content %}</h2>

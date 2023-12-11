@@ -1,0 +1,55 @@
+{% extends "theater/base.html" %}
+{% load static %}
+{% block content %}
+
+
+    <form method="POST" action="{%url 'ticketbooking'%}">
+        {% csrf_token %}
+       <div class="container"> 
+            <legend class="boder-bottom mb-4">Book your tickets here</legend>
+            
+            <label for="Movie_name"><b>Movie Name</b></label>
+         <br>
+            <select name="Movie_name" required>
+                <option value="Wonka (2D)">Wonka (2D)</option>
+                <option value="Spider-Man: Across the Spider-Verse (3D)">Spider-Man: Across the Spider-Verse (3D)</option>
+                <option value="Oppenheimer (2D)">Oppenheimer (2D)</option>
+                <option value="Trolls Band Together (3D)">Trolls Band Together (3D)</option>
+            </select>
+        <br>
+      
+            <label for="date"><b>Date</b></label>
+         <br>
+            <input type="date" name="Date" required>
+       <br>
+            <label for="Time"><b>Show-Time</b></label>
+         <br>
+            <select name="Time" required>
+                <option value="11.30 am">11.30 am</option>
+                <option value="3.40 pm">3.40 pm</option>
+                <option value="7.00 pm">7.00 pm</option>
+                <option value="10.00 pm">10.00 pm</option>
+            </select>
+       <br>
+            <label for="hall"><b>Class Type</b></label>
+         <br>
+            <select name="Hall_type" required>
+                <option value="Sliver Class">Sliver Class</option>
+                <option value="Golden Class">Golden Class</option>
+                <option value="Platinum Class (Dolby Atmos)">Platinum Class (Dolby Atmos)</option>
+                <option value="Diamond (VIP)">Diamond (VIP)</option>
+            </select>
+          <br>   
+            <label for="Total seat"><b>Total Seat</b></label>
+         <br>
+            <input type="number" name="Total_seat" required>
+        
+        <div class="form-group">
+            <button class="btn btn-outline-info" type="submit">Book Ticket</button> </a>   
+        </div>  
+           </div> 
+    </form>
+
+{% endblock content %}
+
+

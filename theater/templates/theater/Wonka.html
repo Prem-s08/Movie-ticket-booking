@@ -1,0 +1,29 @@
+{% extends "theater/base.html" %}
+{% load static %}
+{% block content %}
+<h2>Wonka</h2>
+
+<div class="imagecontainer">   
+    <div class="polaroid">
+      <img src="{% static 'Wonka.jpg' %}" alt="5 Terre" style="width:100%">
+    </div>
+    <div class="container">
+        <p>Armed with nothing but a hatful of dreams, young chocolatier Willy Wonka manages to change the world, one delectable bite at a time.
+            Release date: December 8, 2023 (Ireland)
+            Director: Paul King
+            Budget: 125 million USD
+            Producers: David Heyman, Alexandra Ferguson Derbyshire, Luke Kelly
+            Screenplay: Paul King, Simon Farnaby
+            Production companies: Heyday Films, Village Roadshow Pictures, Warner Bros.
+            Cinematography: Chung-hoon Chung.</p>
+
+            <img src="{% static 'IMDB.jpeg' %}" style="width:50px"> <strong> 7.5/10
+    </div>
+</div>
+<div class="imagecontainer">
+    <iframe width="950" height="380"
+src="https://www.youtube.com/embed/otNh9bTjXWg?autoplay=1&mute=1">
+</iframe>
+</div>
+           
+{% endblock content %}
