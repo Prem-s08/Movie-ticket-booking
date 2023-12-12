@@ -19,7 +19,7 @@ phases:
     commands:
       #- pylint $CODEBUILD_SRC_DIR/*.py
       #- pylint $CODEBUILD_SRC_DIR/*/*.py
-      - sonar-scanner -Dsonar.organization=prem-s08 -Dsonar.projectKey=Prem-s08_Movie-ticket-booking -Dsonar.sources=. -Dsonar.host.url=https://sonarcloud.io -Dsonar.login=2740aaeee73ae926ea425a50557b6c4ae3e8c7c3
+      - sonar-scanner -Dsonar.organization=prem-s08 -Dsonar.projectKey=Prem-s08_Movie-ticket-booking -Dsonar.sources=. -Dsonar.host.url=https://sonarcloud.io -Dsonar.login=195e4b84b73a2aef53147d837d3ed75067c98f06
       - sleep 5
       - curl https://sonarcloud.io/api/qualitygates/project_status?projectKey=Prem-s08_Movie-ticket-booking > analysis.json
       - cat analysis.json
