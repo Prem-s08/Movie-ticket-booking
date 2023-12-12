@@ -6,7 +6,7 @@ phases:
       python: 3.11
     commands:
       
-pip install --upgrade pip# Install dependencies needed for running the static analysis
+pip install --upgrade 
 java --version
 pip install -r $CODEBUILD_SRC_DIR/requirements.txt pylint
 yum update
@@ -16,7 +16,7 @@ unzip ./sonar-scanner-cli-4.7.0.2747-linux.zip
 export PATH=$PATH:$PWD/sonar-scanner-4.7.0.2747-linux/bin/
 python --version
 pre_build:
-  commands:#- pylint $CODEBUILD_SRC_DIR/.py
+  commands: #- pylint $CODEBUILD_SRC_DIR/.py
     #- pylint $CODEBUILD_SRC_DIR//*.py
 sonar-scanner -Dsonar.organization=prem-s08 -Dsonar.projectKey=Prem-s08_Movie-ticket-booking -Dsonar.sources=. -Dsonar.host.url=https://sonarcloud.io/ -Dsonar.login=2740aaeee73ae926ea425a50557b6c4ae3e8c7c3
 sleep 5
